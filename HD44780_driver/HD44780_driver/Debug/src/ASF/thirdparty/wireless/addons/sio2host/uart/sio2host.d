@@ -1,6 +1,7 @@
-src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
- ../src/lcd_driver/lcd_driver.c ../src/asf.h \
- ../src/ASF/sam/utils/compiler.h \
+src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.d \
+ src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.o: \
+ ../src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.c \
+ ../src/asf.h ../src/ASF/sam/utils/compiler.h \
  d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\4.9.3\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
  ../src/ASF/sam/utils/preprocessor/preprocessor.h \
@@ -132,8 +133,9 @@ src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
  ../src/ASF/common/services/serial/sam_uart/uart_serial.h \
  ../src/ASF/sam/drivers/uart/uart.h ../src/ASF/sam/drivers/usart/usart.h \
  ../src/config/conf_uart_serial.h \
- ../src/ASF/sam/drivers/pio/pio_handler.h ../src/lcd_driver/lcd_driver.h \
- ../src/lcd_driver/hd44780.h
+ ../src/ASF/sam/drivers/pio/pio_handler.h \
+ ../src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h \
+ ../src/config/conf_sio2host.h
 
 ../src/asf.h:
 
@@ -409,6 +411,6 @@ d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-n
 
 ../src/ASF/sam/drivers/pio/pio_handler.h:
 
-../src/lcd_driver/lcd_driver.h:
+../src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h:
 
-../src/lcd_driver/hd44780.h:
+../src/config/conf_sio2host.h:

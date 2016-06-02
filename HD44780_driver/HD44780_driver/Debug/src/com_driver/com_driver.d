@@ -1,5 +1,5 @@
-src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
- ../src/lcd_driver/lcd_driver.c ../src/asf.h \
+src/com_driver/com_driver.d src/com_driver/com_driver.o: \
+ ../src/com_driver/com_driver.c ../src/asf.h \
  ../src/ASF/sam/utils/compiler.h \
  d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\4.9.3\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
@@ -132,8 +132,7 @@ src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
  ../src/ASF/common/services/serial/sam_uart/uart_serial.h \
  ../src/ASF/sam/drivers/uart/uart.h ../src/ASF/sam/drivers/usart/usart.h \
  ../src/config/conf_uart_serial.h \
- ../src/ASF/sam/drivers/pio/pio_handler.h ../src/lcd_driver/lcd_driver.h \
- ../src/lcd_driver/hd44780.h
+ ../src/ASF/sam/drivers/pio/pio_handler.h
 
 ../src/asf.h:
 
@@ -408,7 +407,3 @@ d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-n
 ../src/config/conf_uart_serial.h:
 
 ../src/ASF/sam/drivers/pio/pio_handler.h:
-
-../src/lcd_driver/lcd_driver.h:
-
-../src/lcd_driver/hd44780.h:

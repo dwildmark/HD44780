@@ -21,5 +21,9 @@ void LCD_WriteData(uint8_t data);
 void LCD_WriteCommand(uint8_t command);
 void LCD_WriteString(char *input);
 void LCD_init(void);
+void LCD_PulseEnable(void);
+void LCD_AddCharacter(uint8_t location, uint8_t charmap[]);
+uint8_t char_convert_sv(uint8_t character);
+void LCD_sv_mode(void);
 
 #endif /* LCD_DRIVER_H_ */

@@ -1,8 +1,11 @@
-src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
- ../src/lcd_driver/lcd_driver.c ../src/asf.h \
+src/ASF/common/services/serial/usart_serial.d \
+ src/ASF/common/services/serial/usart_serial.o: \
+ ../src/ASF/common/services/serial/usart_serial.c \
+ ../src/ASF/common/services/serial/serial.h \
+ ../src/ASF/common/utils/parts.h ../src/ASF/sam/utils/status_codes.h \
+ ../src/ASF/common/services/serial/sam_uart/uart_serial.h \
  ../src/ASF/sam/utils/compiler.h \
  d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\4.9.3\include\stddef.h \
- ../src/ASF/common/utils/parts.h \
  ../src/ASF/sam/utils/preprocessor/preprocessor.h \
  ../src/ASF/sam/utils/preprocessor/tpaste.h \
  ../src/ASF/sam/utils/preprocessor/stringz.h \
@@ -109,8 +112,6 @@ src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
  d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\alloca.h \
  ../src/ASF/common/utils/interrupt.h \
  ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h \
- ../src/ASF/sam/utils/status_codes.h \
- ../src/ASF/common/services/delay/delay.h \
  ../src/ASF/common/services/clock/sysclk.h ../src/config/conf_clock.h \
  ../src/ASF/common/services/clock/sam3x/sysclk.h \
  ../src/ASF/common/services/clock/osc.h \
@@ -120,28 +121,20 @@ src/lcd_driver/lcd_driver.d src/lcd_driver/lcd_driver.o: \
  ../src/ASF/sam/utils/cmsis/sam3x/source/templates/exceptions.h \
  ../src/ASF/sam/drivers/pmc/pmc.h ../src/ASF/common/services/clock/pll.h \
  ../src/ASF/common/services/clock/sam3x/pll.h \
- ../src/ASF/common/services/delay/sam/cycle_counter.h \
- ../src/ASF/common/services/gpio/gpio.h \
- ../src/ASF/common/services/gpio/sam_gpio/sam_gpio.h \
- ../src/ASF/sam/drivers/pio/pio.h \
- ../src/ASF/common/services/ioport/ioport.h \
- ../src/ASF/common/services/ioport/sam/ioport_pio.h \
- ../src/ASF/sam/drivers/pmc/sleep.h \
- ../src/ASF/common/utils/stdio/stdio_serial/stdio_serial.h \
- ../src/ASF/common/services/serial/serial.h \
- ../src/ASF/common/services/serial/sam_uart/uart_serial.h \
  ../src/ASF/sam/drivers/uart/uart.h ../src/ASF/sam/drivers/usart/usart.h \
- ../src/config/conf_uart_serial.h \
- ../src/ASF/sam/drivers/pio/pio_handler.h ../src/lcd_driver/lcd_driver.h \
- ../src/lcd_driver/hd44780.h
+ ../src/config/conf_uart_serial.h
 
-../src/asf.h:
+../src/ASF/common/services/serial/serial.h:
+
+../src/ASF/common/utils/parts.h:
+
+../src/ASF/sam/utils/status_codes.h:
+
+../src/ASF/common/services/serial/sam_uart/uart_serial.h:
 
 ../src/ASF/sam/utils/compiler.h:
 
 d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\4.9.3\include\stddef.h:
-
-../src/ASF/common/utils/parts.h:
 
 ../src/ASF/sam/utils/preprocessor/preprocessor.h:
 
@@ -355,10 +348,6 @@ d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-n
 
 ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h:
 
-../src/ASF/sam/utils/status_codes.h:
-
-../src/ASF/common/services/delay/delay.h:
-
 ../src/ASF/common/services/clock/sysclk.h:
 
 ../src/config/conf_clock.h:
@@ -381,34 +370,8 @@ d:\program\ files\ (x86)\atmel\ studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-n
 
 ../src/ASF/common/services/clock/sam3x/pll.h:
 
-../src/ASF/common/services/delay/sam/cycle_counter.h:
-
-../src/ASF/common/services/gpio/gpio.h:
-
-../src/ASF/common/services/gpio/sam_gpio/sam_gpio.h:
-
-../src/ASF/sam/drivers/pio/pio.h:
-
-../src/ASF/common/services/ioport/ioport.h:
-
-../src/ASF/common/services/ioport/sam/ioport_pio.h:
-
-../src/ASF/sam/drivers/pmc/sleep.h:
-
-../src/ASF/common/utils/stdio/stdio_serial/stdio_serial.h:
-
-../src/ASF/common/services/serial/serial.h:
-
-../src/ASF/common/services/serial/sam_uart/uart_serial.h:
-
 ../src/ASF/sam/drivers/uart/uart.h:
 
 ../src/ASF/sam/drivers/usart/usart.h:
 
 ../src/config/conf_uart_serial.h:
-
-../src/ASF/sam/drivers/pio/pio_handler.h:
-
-../src/lcd_driver/lcd_driver.h:
-
-../src/lcd_driver/hd44780.h:

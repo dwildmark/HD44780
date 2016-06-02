@@ -2,6 +2,20 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\ASF\common\services\serial\usart_serial.c
+
+src\ASF\common\utils\stdio\read.c
+
+src\ASF\common\utils\stdio\write.c
+
+src\ASF\sam\drivers\uart\uart.c
+
+src\ASF\sam\drivers\usart\usart.c
+
+src\ASF\thirdparty\wireless\addons\sio2host\uart\sio2host.c
+
+src\com_driver\com_driver.c
+
 src\ASF\common\services\delay\sam\cycle_counter.c
 
 src\lcd_driver\lcd_driver.c
